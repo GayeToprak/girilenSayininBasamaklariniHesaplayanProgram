@@ -1,0 +1,19 @@
+# girilenSayininBasamaklariniHesaplayanProgram
+import java.util.Scanner;
+
+public class basamaktoplami {
+    public static void main(String []args){
+
+        int a = 0 , number;
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("bir sayı giriniz:");
+        number = inp.nextInt();
+
+        while(number != 0){
+            a = a + number % 10;
+            number /= 10;
+        }
+        System.out.println("girilen sayının basamakları toplamı:"+ a);
+    }
+}
